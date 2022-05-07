@@ -57,9 +57,13 @@ You can double check that Keplr is displaying the correct address directly on yo
 You should now see the same address that is displayed on the Keplr extension. 
 
 To learn more about using Keplr, we suggest you have a look at their [support documentation](https://keplr.crunch.help).
+<<<<<<< HEAD
 <!-- markdown-link-check-disable -->
 You can also have a look at the [Ledger support page](https://support.ledger.com/hc/en-us/articles/4411149814417?docs=true) for more details.
 <!-- markdown-link-check-enable -->
+=======
+You can also have a look at the [Ledger support page](https://support.ledger.com/hc/en-us/articles/4411149814417-Set-up-and-use-Keplr-to-access-your-Ledger-Cosmos-ATOM-account?docs=true) for more details.
+>>>>>>> origin/Theta-main
 
 ## Gaia CLI + Ledger Nano
 
@@ -211,4 +215,8 @@ Feel welcome to reach out in our [Telegram channel](https://t.me/cosmosproject) 
 Here are a few relevant and helpful tutorials from the wonderful Cosmos community:
 
 - [Catdotfish](https://catdotfish.medium.com/) - [How to use the Keplr Wallet](https://medium.com/chainapsis/how-to-use-keplr-wallet-40afc80907f6)
+<<<<<<< HEAD
 - [Cryptium Labs](https://medium.com/cryptium) - [How to store your ATOMS on your Ledger and delegate with the command line](https://medium.com/cryptium-cosmos/how-to-store-your-cosmos-atoms-on-your-ledger-and-delegate-with-the-command-line-929eb29705f)
+=======
+- [Cryptium Labs](https://medium.com/cryptium-cosmos) - [How to store your ATOMS on your Ledger and delegate with the command line](https://medium.com/cryptium-cosmos/how-to-store-your-cosmos-atoms-on-your-ledger-and-delegate-with-the-command-line-929eb29705f)
+>>>>>>> origin/Theta-main

@@ -240,5 +240,14 @@ test-docker-push: test-docker
 	@docker push ${TEST_DOCKER_REPO}:$(shell git rev-parse --abbrev-ref HEAD | sed 's#/#_#g')
 	@docker push ${TEST_DOCKER_REPO}:latest
 
+<<<<<<< HEAD
 .PHONY: all build-linux install format lint go-mod-cache draw-deps clean build \
 	start-gaia contract-tests benchmark docker-build-debug docker-build-hermes
+=======
+.PHONY: all build-linux install format lint \
+	go-mod-cache draw-deps clean build \
+	setup-transactions setup-contract-tests-data start-gaia run-lcd-contract-tests contract-tests \
+	benchmark \
+	build-docker-gaiadnode localnet-start localnet-stop \
+	docker-single-node docker-build-debug docker-build-hermes
+>>>>>>> origin/Theta-main

@@ -70,7 +70,11 @@ From the [contrib/testnets/local directory](https://github.com/cosmos/gaia/tree/
 
 ### Requirements
 
+<<<<<<< HEAD
 - [Install gaia](../getting-started/installation.md)
+=======
+- [Install gaia](./getting-started/installation.md)
+>>>>>>> origin/Theta-main
 - [Install docker](https://docs.docker.com/engine/installation/)
 - [Install docker-compose](https://docs.docker.com/compose/install/)
 

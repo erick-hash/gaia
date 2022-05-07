@@ -63,5 +63,8 @@ Esperamos que todo esto tome forma a medida que las propuestas sean debatidas, a
 
 ### ¿Cómo se desembolsan los fondos una vez que una prouesta de gastos de comunidad es aprobada?
 Si una propuesta de gastos de comunidad es aprobada, el número de ATOM inluidos en la propuesta serán transferidos desde la community pool a la dirección especificada en la propuesta, y esto ocurrirá justo inmediatamente después de que el periodo de votación termine.
+<<<<<<< HEAD
 
 <!-- markdown-link-check-enable -->
+=======
+>>>>>>> origin/Theta-main

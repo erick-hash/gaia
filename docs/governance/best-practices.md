@@ -125,7 +125,10 @@ Assume that many people will stop reading at this point. However it is important
    - do you have conflicts of interest to declare?
 
 ### Begin with a well-considered draft proposal
+<<<<<<< HEAD
 <!-- markdown-link-check-disable -->
+=======
+>>>>>>> origin/Theta-main
 
 The ideal format for a proposal is as a Markdown file (ie. `.md`) in a github repo. Markdown
 is a simple and accessible format for writing plain text files that is easy to
@@ -171,6 +174,11 @@ A majority of the voting community should probably be aware of the proposal and 
 See the [submitting guide](./submitting.md) for more on submitting proposals.
 
 ### The Deposit Period
+<<<<<<< HEAD
+=======
+
+The deposit period currently lasts 14 days. If you submitted your transaction with the minimum deposit (512 ATOM), your proposal will immediately enter the voting period. If you didn't submit the minimum deposit amount (currently 512 ATOM), then this may be an opportunity for others to show their support by contributing (and risking) their ATOMs as a bond for your proposal. You can request contributions openly and also contact stakeholders directly (particularly stakeholders who are enthusiastic about your proposal). Remember that each contributor is risking their funds, and you can [read more about the conditions for burning deposits here](./overview.md#burned-deposits).
+>>>>>>> origin/Theta-main
 
 The deposit period currently lasts 14 days. If you submitted your transaction with the minimum deposit (64 ATOM), your proposal will immediately enter the voting period. If you didn't submit the minimum deposit amount (currently 64 ATOM), then this may be an opportunity for others to show their support by contributing (and risking) their ATOMs as a bond for your proposal. You can request contributions openly and also contact stakeholders directly (particularly stakeholders who are enthusiastic about your proposal). Remember that each contributor is risking their funds, and you can [read more about the conditions for burning deposits here](./process.md#burned-deposits).
 
@@ -187,4 +195,8 @@ At this point you'll want to track which validator has voted and which has not. 
 
 Remember that any voter may change their vote at any time before the voting period ends. That historically doesn't happen often, but there may be an opportunity to convince a voter to change their vote. The biggest risk is that stakeholders won't vote at all (for a number of reasons). Validator operators tend to need multiple reminders to vote. How you choose to contact validator operators, how often, and what you say is up to you--remember that no validator is obligated to vote, and that operators are likely occupied by competing demands for their attention. Take care not to stress any potential relationship with validator operators.
 
+<<<<<<< HEAD
    [forum]: https://forum.cosmos.network/c/hub-proposals/25
+=======
+   [forum]: https://forum.cosmos.network/c/governance
+>>>>>>> origin/Theta-main

@@ -11,6 +11,11 @@ order: 2
 The deposit period lasts either 14 days or until the proposal deposit totals 64 ATOMs, whichever happens first.
 
 #### Deposits
+<<<<<<< HEAD
+=======
+
+Deposit amounts are at risk of being burned. Prior to a governance proposal entering the voting period (ie. for the proposal to be voted upon), there must be at least a minimum number of ATOMs deposited (512). Anyone may contribute to this deposit. Deposits of passed and failed proposals are returned to the contributors.
+>>>>>>> origin/Theta-main
 
 Deposit amounts are at risk of being burned. Prior to a governance proposal entering the voting period (ie. for the proposal to be voted upon), there must be at least a minimum number of ATOMs deposited (64). Anyone may contribute to this deposit. Deposits of passed and failed proposals are returned to the contributors.
 
@@ -53,7 +58,11 @@ Currently, the criteria for submitting and passing/failing all proposal types is
 
 ### How is voting tallied?
 
+<<<<<<< HEAD
 Voting power is determined by stake weight at the end of the 14-day voting period and is proportional to the number of total ATOMs participating in the vote. Only bonded ATOMs count towards the voting power for a governance proposal. Liquid ATOMs will not count toward a vote or quorum.
+=======
+Voting power is determined by stake weight at the end of the 14-day voting period and is proportional to the number of total ATOMs participating in the vote. Only bonded ATOMs count towards the voting power for a governance proposal. Liquid ATOMs will not count toward a vote or quorum. 
+>>>>>>> origin/Theta-main
 
 Inactive validators can cast a vote, but their voting power (including the backing of their delegators) will not count toward the vote if they are not in the active set when the voting period ends. That means that if I delegate to a validator that is either jailed, tombstoned, or ranked lower than 125 in stake-backing at the time that the voting period ends, my stake-weight will not count in the vote.
 

@@ -1,6 +1,9 @@
 package gaia
 
+<<<<<<< HEAD
 // nolint: gosec
+=======
+>>>>>>> origin/Theta-main
 const (
 	appName     = "GaiaApp"
 	upgradeName = "v7-Theta"

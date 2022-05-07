@@ -88,5 +88,8 @@ go: go version go1.12.5 darwin/amd64
 ### 다음 절차
 
 축하합니다! 이제 [메인넷](./gaia-tutorials/join-mainnet.md)에 참가하거나[퍼블릭 테스트넷](./join-testnet.md)에 참가하시거나 [자체 테스트넷](./gaia-tutorials/deploy-testnet.md)을 운영하실 수 있습니다.
+<<<<<<< HEAD
 
 <!-- markdown-link-check-enable -->
+=======
+>>>>>>> origin/Theta-main

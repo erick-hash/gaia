@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <!-- markdown-link-check-disable -->
+=======
+>>>>>>> origin/Theta-main
 # Documentación para el Hub de Cosmos
 
 Bienvenido a la documentación de la **aplicación para el Hub de Cosmos: `gaia`**
@@ -21,7 +24,11 @@ Bienvenido a la documentación de la **aplicación para el Hub de Cosmos: `gaia`
 
 ## Prepare su propia Testnet de `gaia`
 
+<<<<<<< HEAD
 - [Prepare su propia Testnet de `gaia`](../hub-tutorials/deploy-testnet.md)
+=======
+- [Prepare su propia Testnet de `gaia`](./hub-tutorials/deploy-testnet.md)
+>>>>>>> origin/Theta-main
 
 ## Recursos adicionales
 
@@ -40,5 +47,8 @@ Consulte [este archivo](./DOCS_README.md) para conocer los detalles del proceso 
 # Versión
 
 Esta documentación ha construida usando el siguiente commit:
+<<<<<<< HEAD
 
 <!-- markdown-link-check-enable -->
+=======
+>>>>>>> origin/Theta-main

@@ -40,7 +40,11 @@ The reason we use IPFS is that it is a decentralized means of storage, making it
 
 ## Formatting the JSON file for the governance proposal
 
+<<<<<<< HEAD
 Prior to sending the transaction that submits your proposal on-chain, you must create a JSON file. This file will contain the information that will be stored on-chain as the governance proposal. Begin by creating a new text (.txt) file to enter this information. Use [these best practices](./best-practices.md) as a guide for the contents of your proposal. When you're done, save the file as a .json file. See the examples that follow to help format your proposal.
+=======
+Prior to sending the transaction that submits your proposal on-chain, you must create a JSON file. This file will contain the information that will be stored on-chain as the governance proposal. Begin by creating a new text (.txt) file to enter this information. Use [these best practices](./best_practices.md) as a guide for the contents of your proposal. When you're done, save the file as a .json file. See the examples that follow to help format your proposal.
+>>>>>>> origin/Theta-main
 
 Each proposal type is unique in how the JSON should be formatted.
 See the relevant section for the type of proposal you are drafting:
@@ -109,6 +113,28 @@ There are a number of reasons why a transaction may fail. Here are two examples:
 2. **Incorrect denomination** - You may have specified an amount in 'utom' or 'atom' instead of 'uatom', causing the transaction to fail.
 
 If you encounter a problem, try to troubleshoot it first, and then ask for help on the Cosmos Hub forum: [https://forum.cosmos.network](https://forum.cosmos.network/c/hub-proposals/25). We can learn from failed attempts and use them to improve upon this guide.
+
+### Depositing funds after a proposal has been submitted
+Sometimes a proposal is submitted without having the minimum token amount deposited yet. In these cases you would want to be able to deposit more tokens to get the proposal into the voting stage. In order to deposit tokens, you'll need to know what your proposal ID is after you've submitted your proposal. You can query all proposals by the following command:
+
+```
+gaiad q gov proposals
+```
+
+If there are a lot of proposals on the chain already, you can also filter by your own address. For the proposal above, that would be:
+
+```
+gaiad q gov proposals --depositor cosmos1hxv7mpztvln45eghez6evw2ypcw4vjmsmr8cdx
+```
+
+Once you have the proposal ID, this is the command to deposit extra tokens:
+
+```
+gaiad tx gov deposit <proposal-id> <deposit> --from <name>
+```
+
+In our case above, the `<proposal-id>` would be 59 as queried earlier.
+The `<deposit>` is written as `500000uatom`, just like the example above.
 
 ### Depositing funds after a proposal has been submitted
 Sometimes a proposal is submitted without having the minimum token amount deposited yet. In these cases you would want to be able to deposit more tokens to get the proposal into the voting stage. In order to deposit tokens, you'll need to know what your proposal ID is after you've submitted your proposal. You can query all proposals by the following command:

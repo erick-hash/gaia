@@ -9,7 +9,10 @@ import (
 	"net/http"
 	"time"
 
+<<<<<<< HEAD
 	"github.com/cosmos/cosmos-sdk/client/flags"
+=======
+>>>>>>> origin/Theta-main
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	"github.com/ory/dockertest/v3/docker"
@@ -64,6 +67,7 @@ func (s *IntegrationTestSuite) connectIBCChains() {
 	s.T().Logf("connected %s and %s chains via IBC", s.chainA.id, s.chainB.id)
 }
 
+<<<<<<< HEAD
 func (s *IntegrationTestSuite) sendMsgSend(c *chain, valIdx int, from, to, amt, fees string) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Minute)
 	defer cancel()
@@ -124,6 +128,8 @@ func (s *IntegrationTestSuite) sendMsgSend(c *chain, valIdx int, from, to, amt, 
 	)
 }
 
+=======
+>>>>>>> origin/Theta-main
 func (s *IntegrationTestSuite) sendIBC(srcChainID, dstChainID, recipient string, token sdk.Coin) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Minute)
 	defer cancel()

@@ -177,5 +177,8 @@ El módulo `gov` contiene los siguientes parámetros:
 | veto               | string (dec)     | "0.334000000000000000" |
 
 __Observación__: El módulo de gobierno contiene parámetros que son objetos que no son como los demás módulos. Si sólo se desea modificar un subconjunto de parámetros, sólo hay que incluirlos y no toda la estructura de objetos de parámetros.
+<<<<<<< HEAD
 
 <!-- markdown-link-check-enable -->
+=======
+>>>>>>> origin/Theta-main

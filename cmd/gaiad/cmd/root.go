@@ -79,10 +79,20 @@ func NewRootCmd() (*cobra.Command, params.EncodingConfig) {
 }
 
 func initAppConfig() (string, interface{}) {
+<<<<<<< HEAD
+=======
+
+	type CustomAppConfig struct {
+		serverconfig.Config
+	}
+
+	// Allow overrides to the SDK default server config
+>>>>>>> origin/Theta-main
 	srvCfg := serverconfig.DefaultConfig()
 	srvCfg.StateSync.SnapshotInterval = 1000
 	srvCfg.StateSync.SnapshotKeepRecent = 10
 
+<<<<<<< HEAD
 	return params.CustomConfigTemplate, params.CustomAppConfig{
 		Config: *srvCfg,
 		BypassMinFeeMsgTypes: []string{
@@ -91,6 +101,13 @@ func initAppConfig() (string, interface{}) {
 			sdk.MsgTypeURL(&ibcclienttypes.MsgUpdateClient{}),
 		},
 	}
+=======
+	GaiaAppCfg := CustomAppConfig{Config: *srvCfg}
+
+	GaiaAppTemplate := serverconfig.DefaultConfigTemplate
+
+	return GaiaAppTemplate, GaiaAppCfg
+>>>>>>> origin/Theta-main
 }
 
 func initRootCmd(rootCmd *cobra.Command, encodingConfig params.EncodingConfig) {

@@ -4,6 +4,12 @@ import (
 	"testing"
 
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
+<<<<<<< HEAD
+=======
+
+	app "github.com/cosmos/gaia/v7/app"
+	"github.com/cosmos/gaia/v7/cmd/gaiad/cmd"
+>>>>>>> origin/Theta-main
 	"github.com/stretchr/testify/require"
 
 	app "github.com/cosmos/gaia/v7/app"

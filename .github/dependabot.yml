@@ -18,5 +18,9 @@ updates:
       interval: daily
     open-pull-requests-limit: 10
     labels:
+<<<<<<< HEAD
       - "A:automerge"
+=======
+      - automerge
+>>>>>>> origin/Theta-main
       - dependencies

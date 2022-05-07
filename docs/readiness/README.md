@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 <!--
 order: 1
 -->
 
+=======
+>>>>>>> origin/Theta-main
 # Architecture Decision Records (ADR)
 
 This is a location to record all high-level architecture decisions for new feature and module proposals in the Cosmos Hub.
@@ -34,7 +37,11 @@ If recorded decisions turned out to be lacking, convene a discussion, record the
 
 ### Process
 1. Copy the `template.md` file. Use the following filename pattern: `adr-next_number-title.md`
+<<<<<<< HEAD
 2. Link the ADR in the related [feature epic](../../.github/ISSUE_TEMPLATE/feature-readiness.md)
+=======
+2. Link the ADR in the related [feature epic](../../.github/ISSUE_TEMPLATE/module-readiness.md)
+>>>>>>> origin/Theta-main
 2. Create a draft Pull Request if you want to get early feedback.
 3. Make sure the context and a solution is clear and well documented.
 4. Add an entry to a list in the README file [Table of Contents](#ADR-Table-of-Contents).
@@ -97,13 +104,25 @@ When writing ADRs, follow the same best practices for writing RFCs. When writing
 
 ### Accepted
 
+<<<<<<< HEAD
 - n/a
 
 ### Proposed
 
 - n/a
+=======
+- [ADR 000: <Accepted Module or Feature>]()
+
+### Proposed
+
+- [ADR 001: <Proposed Module or Feature>]()
+>>>>>>> origin/Theta-main
 
 
 ### Draft
 
+<<<<<<< HEAD
 - [ADR 001: Interchain Accounts](./adr-001-interchain-accounts.md)
+=======
+- [ADR 002: <Draft Module or Feature>]()
+>>>>>>> origin/Theta-main

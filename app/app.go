@@ -104,12 +104,19 @@ import (
 	tmos "github.com/tendermint/tendermint/libs/os"
 	dbm "github.com/tendermint/tm-db"
 
+<<<<<<< HEAD
 	"github.com/strangelove-ventures/packet-forward-middleware/v2/router"
 	routerkeeper "github.com/strangelove-ventures/packet-forward-middleware/v2/router/keeper"
 	routertypes "github.com/strangelove-ventures/packet-forward-middleware/v2/router/types"
 
 	gaiaante "github.com/cosmos/gaia/v7/ante"
 	gaiaappparams "github.com/cosmos/gaia/v7/app/params"
+=======
+	gaiaappparams "github.com/cosmos/gaia/v7/app/params"
+	"github.com/strangelove-ventures/packet-forward-middleware/v2/router"
+	routerkeeper "github.com/strangelove-ventures/packet-forward-middleware/v2/router/keeper"
+	routertypes "github.com/strangelove-ventures/packet-forward-middleware/v2/router/types"
+>>>>>>> origin/Theta-main
 
 	// unnamed import of statik for swagger UI support
 	_ "github.com/cosmos/cosmos-sdk/client/docs/statik"
@@ -613,8 +620,12 @@ func NewGaiaApp(
 				SignModeHandler: encodingConfig.TxConfig.SignModeHandler(),
 				SigGasConsumer:  ante.DefaultSigVerificationGasConsumer,
 			},
+<<<<<<< HEAD
 			IBCkeeper:            app.IBCKeeper,
 			BypassMinFeeMsgTypes: cast.ToStringSlice(appOpts.Get(gaiaappparams.BypassMinFeeMsgTypesKey)),
+=======
+			IBCkeeper: app.IBCKeeper,
+>>>>>>> origin/Theta-main
 		},
 	)
 	if err != nil {

@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <!--
 parent:
   order: false
 -->
 
+=======
+>>>>>>> origin/Theta-main
 ---
 ADR: (number)
 Title: (short title)

@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <!-- markdown-link-check-disable -->
+=======
+>>>>>>> origin/Theta-main
 # State of Cosmos Governance 2021
 
 > Governance and decision-making processes within the Cosmos ecosystem as of August 2021. This particular document serves as a snapshot of the process at this moment in time and parts of it may be out of date or deprecated in the future.

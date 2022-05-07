@@ -17,11 +17,19 @@ jobs:
   test-coverage-upload:
     runs-on: ubuntu-latest
     steps:
+<<<<<<< HEAD
       - uses: actions/setup-go@v3.0.0
         with:
           go-version: 1.17
       - uses: actions/checkout@v2.4.0
       - uses: technote-space/get-diff-action@v6.0.1
+=======
+      - uses: actions/setup-go@v2.1.5
+        with:
+          go-version: 1.17
+      - uses: actions/checkout@v2.4.0
+      - uses: technote-space/get-diff-action@v5.0.2
+>>>>>>> origin/Theta-main
         with:
           PATTERNS: |
             **/**.go
@@ -40,6 +48,10 @@ jobs:
       - name: test & coverage report creation
         run: |
           make test-unit-cover
+<<<<<<< HEAD
+=======
+        if: "env.GIT_DIFF != ''"
+>>>>>>> origin/Theta-main
       - name: filter out DONTCOVER
         run: |
           excludelist="$(find ./ -type f -name '*.go' | xargs grep -l 'DONTCOVER')"
@@ -50,17 +62,30 @@ jobs:
             echo "Excluding ${filename} from coverage report..."
             sed -i.bak "/$(echo $filename | sed 's/\//\\\//g')/d" coverage.txt
           done
+<<<<<<< HEAD
 
       - uses: codecov/codecov-action@v3.1.0
         with:
           file: ./coverage.txt # optional
           fail_ci_if_error: true
+=======
+        if: "env.GIT_DIFF != ''"
+      - uses: codecov/codecov-action@v2.1.0
+        with:
+          file: ./coverage.txt # optional
+          fail_ci_if_error: true
+        if: "env.GIT_DIFF != ''"
+>>>>>>> origin/Theta-main
 
   test-e2e:
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
+<<<<<<< HEAD
       - uses: actions/setup-go@v3.0.0
+=======
+      - uses: actions/setup-go@v2.2.0
+>>>>>>> origin/Theta-main
         with:
           go-version: 1.17
       - uses: actions/checkout@v2
@@ -71,6 +96,7 @@ jobs:
             go.mod
             go.sum
       - name: Build Docker Image
+<<<<<<< HEAD
         run: make docker-build-debug
       - name: Test E2E
         run: make test-e2e
@@ -101,4 +127,12 @@ jobs:
         run: |
           sleep 3m
           ./contrib/scripts/test_localnet_liveness.sh 100 5 50 localhost
+=======
+        run: |
+          make docker-build-debug
+        if: env.GIT_DIFF
+      - name: Test E2E
+        run: |
+          make test-e2e
+>>>>>>> origin/Theta-main
         if: env.GIT_DIFF
